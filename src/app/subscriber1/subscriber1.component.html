@@ -1,0 +1,12 @@
+<p>Subscriber1</p>
+<div *ngFor="let data of receivedData">
+  {{ data }}
+</div>
+<div *ngFor="let error of receivedError" class="bg-danger">
+  {{ error }}
+</div>
+
+<div class="row">
+  <button class="btn btn-primary mr-2" (click)="subscribe()">Subscribe</button>
+  <button class="btn btn-primary" (click)="unsubscribe()">Unsubscribe</button>
+</div>
